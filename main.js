@@ -6,7 +6,7 @@ elSearchResult.textContent = null
 
 
 
-var moviesArray = movies.slice(0, 500);
+var moviesArray = movies.slice(0, 1);
 
 elSearchResult.textContent = moviesArray.length
 
@@ -96,3 +96,5 @@ for (const item of moviesArray) {
 
   elMoviesList.appendChild(newLi);
 }
+
+// console.log(newli);
