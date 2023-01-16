@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>imtihon-3</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="h4 text-center py-4">Movies catalog</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                        <form method="get" action="https://echo.htmlacedemy.ru/">
+                                <input type="text" class="form-control mb-3" placeholder="Search" name="movie-name" >
+                                <input type="number" class="form-control mb-3" step="0.1" min="0" max="10" placeholder="Rating" name="movie-name" >
+                            
+                                <select class="form-select mb-3" aria-label="Default select example" name="category">
+                                    <option selected value="All">All</option>
+                                    <option value="Comedy">Comedy</option>
+                                    <option value="Dramma">Dramma</option>
+                                    <option value="Carton">Carton</option>
+                                  </select>
+                                  <select class="form-select mb-3" aria-label="Default select example" name="sorting">
+                                    <option selected value="Rating">Rating (High to low)</option>
+                                    <option value="Rating">Rating (Low to High)</option>
+                                    <option value="Year">Year (High to Low)</option>
+                                    <option value="Year">Year (Low to High)</option>
+                                  </select>
+                     
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+                        </form>
+                    <div class="Bookmarked mt-5">
+                        <h3 class="mb-3" >Bookmarked movies</h3>
+                        <ul class="list-unstyled">
+                            <li class="border border-darc p-3">
+                                <h4>
+                                    Avangers:Infinity War
+                                </h4>
+                                <button type="button" class="btn btn-danger">Remove</button>
+                            </li>
+                            <li class="border border-darc p-3">
+                                <h4>
+                                    Avangers:Infinity War
+                                </h4>
+                                <button type="button" class="btn btn-danger">Remove</button>
+                            </li>
+                            <li class="border border-darc p-3">
+                                <h4>
+                                    Avangers:Infinity War
+                                </h4>
+                                <button type="button" class="btn btn-danger">Remove</button>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <div class=>
+                    <p class="h4"> Search result: <span class="search_result">39</span></p>
+
+                    <div class="alert alert-primary" role="alert">
+                        User the form on the left to search for a movie
+                    </div>
+                    <ul class="list-unstyled row card_list">
+                  
+
+                        <li class="col-sm-6 ">
+                            <div class="card">
+                                <img src="./images/p23063502_b_h9_ab.jpg" class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <div class="d-flex align-item-center mb-1" >
+                                    <img src="./images/calendar.png" alt="" width="20" height="20">
+                                    <span class="ms-2">2022</span>
+                                  </div>
+                                  <div class="d-flex align-item-center mb-3 " >
+                                    <img src="./images/cartoon-star-icon-vector-illustration_444196-1109.webp" alt="" width="20" height="20">
+                                    <span class="ms-2">8.7</span>
+                                  </div>
+                                  <div class="d-flex justife-content-between flex-colum flex-xl-row">
+                                    <a class="btn btn-outline-primary" href="#">Watch trailer</a>
+                                    <button type="button" class="btn btn-outline-secondary">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                    </ul>
+
+                    <nav class="d-flex justify-content-center" aria-label="...">
+                        <ul class="pagination pagination-sm">
+                          <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./movies.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
